@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'master', url: 'https://github.com/Mbose360/microservices-E-Commerce-eks-project.git'
+                git branch: 'master', url: 'https://github.com/Mbose360/microservices-E-Commerce-eks-project1.git'
             }
         }
         stage("Docker Image Build") {
@@ -41,7 +41,7 @@ pipeline {
         }
         stage('Update Deployment file') {
             environment {
-                GIT_REPO_NAME = "Microservices-E-Commerce-eks-project"
+                GIT_REPO_NAME = "Microservices-E-Commerce-eks-project1"
                 GIT_EMAIL = "moatazbillahgahgah@gmail.com"
                 GIT_USER_NAME = "Mbose360"
                 IMAGE_NAME = "shippingservice"
