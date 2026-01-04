@@ -19,7 +19,7 @@ pipeline {
 
         stage('Checkout from Git') {
             steps {
-                git branch: 'master', url: 'https://github.com/Mbose360/microservices-E-Commerce-eks-project.git'
+                git branch: 'master', url: 'https://github.com/Mbose360/microservices-E-Commerce-eks-project1.git'
             }
         }
 
